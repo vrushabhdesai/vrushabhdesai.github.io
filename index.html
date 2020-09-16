@@ -52,7 +52,7 @@
             <a class="nav-link js-scroll" href="#service">Projects</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link js-scroll" href="#courses">Relevant Courses</a>
+              <a class="nav-link js-scroll" href="#courses">Coursework</a>
             </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#contact">Contact</a>
@@ -132,7 +132,7 @@
                       <p><span class="title-s">Name: </span> <span>Vrusahbh Desai</span></p>
                       <p><span class="title-s">Email: </span> <span>vmdesai@wpi.edu</span></p>
                       <p><span class="title-s">Phone: </span> <span><span id="person-telephone" itemprop="telephone"><a href="tel:&#43;1%20508-206-0188">&#43;1 (508)-206-0188</a></span></span></p>
-                      <p><span class="title-s">Interest: </span> <span> Path Planning, Deep Learning and Computer Vision</span></p>
+                      <p><span class="title-s">Interest: </span> <span> Controls, Motion Planning and Deep Learning </span></p>
                     </div>
                   </div>
                 </div>
@@ -147,6 +147,10 @@
                     <p class="successful">
                       <b> <i class="fa fa-graduation-cap" aria-hidden="true"></i> B.E in Electronics Engineering (Minor in Artificial Intelligence)<br></b> 
                       <span>D.J.Sanghvi College of Engineering, India. (June 2018)</span> <span class="pull-right">8.7/10 CGPA</span>
+                    </p>
+                    <p class="successful">
+                      <b> <i class="fa fa-graduation-cap" aria-hidden="true"></i> C++ Nanodegree <br></b> 
+                      <span>Udacity (June 2020)</span> <span class="pull-right"></span>
                     </p>
 
                   </div>
@@ -212,7 +216,7 @@
                   <p class="subtitle-a">
                     I am a First-Year Graduate Student Pursuing Masters in Robotics Engineering at <a href="https://www.wpi.edu/academics/study/robotics-engineering-ms" target="_blank"><strong>Worcester Polytechnic Institute, Massachusetts</strong></a>. 
                     I completed my B.E in Electronics Engineering from the <a href="" target="_blank"><strong>Dwarkadas J. Sanghvi College of Engineering, Mumbai University</strong></a>.
-                     My research interests lie broadly in the fields of Deep Learning, Computer Vision and Path Planning for solving real-world problems. 
+                     My research interests lie broadly in the fields of Controls, Deep Learning and Path Planning for solving real-world problems. 
                   </p>
                   <p class="subtitle-a">
                       After completion of my undergrad, I seized the opportunity to work with <a href="http://www.earthenergy-ev.com/" target="_blank"><b>Earth Energy EV</b></a> as an R&D Intern where I designed and manufactured wiring harness and
@@ -331,53 +335,18 @@
             <div class="line-mf"></div>
             <br>
           <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'All')">All</button>
-            <button class="tablinks" onclick="openCity(event, 'AP')">Academic Projects</button>
+            <button class="tablinks" onclick="openCity(event, 'GP')">Graduate Projects</button>
+            <button class="tablinks" onclick="openCity(event, 'AP')">Undergrad Projects</button>
             <button class="tablinks" onclick="openCity(event, 'DJSRP')">DJS Racing Projects</button>
+            <button class="tablinks" onclick="openCity(event, 'CPPPRO')">C++ Nanodegree Projects</button>
           </div>
         </div>
       </div>
     </div>
     
-      <!-- Academic Projects-->
+      <!-- Undergrad Projects-->
       <div id="AP" class="tabcontent">
         <div class="row">
-          
-            <div class="col-md-4">
-                <div class="service-box">
-                  <div class="service-content">
-                    <h2 class="s-title">Distracted Driver Detection</h2>
-                    <p class="s-description text-center">
-                        <i>(September 2019 - December 2019)</i>
-                    </p>
-                    <p class="s-description text-center">
-                        Implementing an API that identifies the distracted driver and triggers the onboard alarm which helps to focus on driving. Designed and trained a different multi-class 
-                        classification algorithm like SVM, Decision Trees, Random Forests and CNN’s capable of detecting 10 different human
-                        distractions based on driver’s activity with an average accuracy of ~ 92%
-                        <br>
-                        <a href="/WDocs/CS539.pptx" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                  <div class="service-box">
-                    <div class="service-content">
-                      <h2 class="s-title">Detection and Recognition of Traffic Signals</h2>
-                      <p class="s-description text-center">
-                          <i>(September 2019 - December 2019)</i>
-                      </p>
-                      <p class="s-description text-center">
-                          Extracted image feature’s using SHIFT, SURF, Hough Transform, and dynamic thresholding to detect traffic signal in a frame. 
-                          Integrated Deep Neural Network based object detection method YOLOv3 for robust detection and SVM for status recognition.
-                          <br>
-                          <a href="https://www.youtube.com/watch?v=PsYKZ-kU1rA" target="_blank" class="button style2 down anchored">[ <i class="fa fa-video-camera" aria-hidden="true"></i> Video ]</a>
-                          <a href="/WDocs/ppt.pptx" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
 
             <div class="col-md-4">
                 <div class="service-box">
@@ -385,13 +354,16 @@
                     <h2 class="s-title">Autonomous Robotic Arm</h2>
                     <p class="s-description text-center">
                         <i>(June 2017 - March 2018)</i>
-                    </p>
-                    <p class="s-description text-center">
-                        Analyzed forward Kinematics of 3 DOF robotic arm and designed the CAD model on SolidWorks studied the strength of the structure using FEA.
-                         To make it autonomous, trained the arm to reach the desired location using principle of supervised learning algorithm using LabVIEW for computing.
-                    <br><a href="https://www.youtube.com/watch?v=EVBGGDy6_04&feature=youtu.be" target="_blank" class="button style2 down anchored">[ <i class="fa fa-video-camera" aria-hidden="true"></i> Video ]</a>
+                        <br><a href="https://www.youtube.com/watch?v=EVBGGDy6_04&feature=youtu.be" target="_blank" class="button style2 down anchored">[ <i class="fa fa-video-camera" aria-hidden="true"></i> Video ]</a>
                     <a href="/WDocs/Poster Final.pdf" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
-                  </p>
+                    </p>
+                    <p class="s-description text-justify">
+                      Analyzed forward Kinematics of 3 DOF SARA robotic arm using DH parameters and designed the CAD model on SolidWorks studied the strength of the structure using FEA.
+                      Tuned the PID controller of the arm to reach the desired location and LabVIEW was used as backend software.
+                    </p>
+                  <p class="s-description text-center">
+                    <i><b>Language:</b> Embedded C | <b>Platform: </b> SolidWorks, LabVIEW </i>
+                    </p>
                   </div>
                 </div>
               </div> 
@@ -402,13 +374,17 @@
               <h2 class="s-title">Gesture Controled Wheelchair</h2>
               <p class="s-description text-center">
                   <i>(July 2019 - June 2019)</i>
+                  <br> <a href="/WDocs/Wheelchair.pdf" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
               </p>
-              <p class="s-description text-center">
+              <p class="s-description text-justify">
                   Interfaced Arduino Uno with GY61 accelerometer sensor which has ADXL-335 as a sensing element, that can measure acceleration 
                   up to a minimum of +/- 3 g and gives the voltage linearly proportional to the acceleration. 
                   According to sensor values, L298N motor driver is used to control all four DC Motors mounted on wheelchair.
-                  <br> <a href="/WDocs/Wheelchair.pdf" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
+                  
                 </p>
+                <p class="s-description text-center">
+                  <i><b>Language:</b> C |<b> Platform:</b> Arduino</i>
+                  </p>
             </div>
           </div>
         </div>
@@ -419,12 +395,16 @@
               <h2 class="s-title">Gesture Controled Robotic Arm</h2>
               <p class="s-description text-center">
                   <i>(January 2017 - April 2017)</i>
+                  <br><a href="/WDocs/G.C.Robotic Arm Report.pdf" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
               </p>
-              <p class="s-description text-center">
+              <p class="s-description text-justify">
                   Designed minimum embedded system board using EDA tools like Eagle, which get the X, Y and Z-Axis angles from an inertia sensor (MPU 6050)
                    located on the user’s hand. According to the sensor value a SCARA based pick and place robotic arm is driven.
-                   <br><a href="/WDocs/G.C.Robotic Arm Report.pdf" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
+                  
               </p>
+              <p class="s-description text-center">
+                <i><b>Language:</b> Embedded C | <b>Platform: </b> Atmel Studios</i>
+                </p>
             </div>
           </div>
         </div>
@@ -435,12 +415,16 @@
                 <h2 class="s-title">Electromagnetic Pulse Generator</h2>
                 <p class="s-description text-center">
                     <i>(August 2016 - October 2016)</i>
-                </p>
-                <p class="s-description text-center">
-                    Designed and carried out the circuit simulation of various passive components using LTspice. 
-                    I was capable to successfully generate 150V surge at primary coil using capacitors as an energy storage bank.
                     <br><a href="/WDocs/EMP_Report.pdf" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
                 </p>
+                <p class="s-description text-justify">
+                    Designed and carried out the circuit simulation of various passive components using LTspice. 
+                    I was capable to successfully generate 150V surge at primary coil using capacitors as an energy storage bank.
+                   
+                </p>
+                <p class="s-description text-center">
+                  <i> <b>Platform: </b> LTspice</i>
+                  </p>
               </div>
             </div>
           </div>
@@ -452,35 +436,175 @@
                 <p class="s-description text-center">
                     <i>(January 2014 - April 2014)</i>
                 </p>
-                <p class="s-description text-center">
+                <p class="s-description text-justify">
                     Germanium Diode was used as a heat-sensing element in the circuit. As the temperature near diode increases the diode reverse resistance drops increasing voltage at 
                     the non-inverting terminal of the operational amplifier which in turn on the external speaker and detect fire.    
                   </a>
                 </p>
+                <p class="s-description text-center">
+                  <i> <b>Platform: </b> LTspice</i>
+                  </p>
               </div>
             </div>
           </div>
         </div>
       </div>  
 
+      <!-- Grad Projects -->
+      <div id="GP" class="tabcontent">
+        <div class="row">
+     
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-content">
+                <h2 class="s-title">TurtleBot Path Tracking using PID Controller</h2>
+                <p class="s-description text-center">
+                    <i>( .May 2020 - August 2020. )</i>
+                    <a href="https://youtu.be/8Y3Wkv1REyE" target="_blank" class="button style2 down anchored">[ <i class="fa fa-video-camera" aria-hidden="true"></i> Video ]</a>
+                    <a href="/WDocs/RC.pdf" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
+                </p>
+                <p class="s-description text-justify">
+                  Designed point-to-point and multi-point PID controller for turtlebot and simulated its performance on ROS gazebo.
+                  Deployed PID controller on actual turtlebot hardware and compared simulation results with actual hardware performance.
+                   <br>
+                </p>
+                <p class="s-description text-center">
+                  <i><b>Language: </b>C++ | <b>Platform: </b>ROS, Gazebo</i>
+                  </p>
+              </div>
+            </div>
+          </div>
+
+      <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-content">
+              <h2 class="s-title">Trajectory generation methods for serial manipulators</h2>
+              <p class="s-description text-center">
+                  <i>(.February 2020 -May 2020.)</i>
+                  <a href="https://www.youtube.com/watch?v=XhCT4XaOYMo&feature=youtu.be" target="_blank" class="button style2 down anchored">[ <i class="fa fa-video-camera" aria-hidden="true"></i> Video ]</a>
+                  <a href="/WDocs/Trajectory_gen.pdf" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
+              </p>
+              <p class="s-description text-justify">
+                Analyzed of two different 3-DoF serial manipulators, specificly cartesian (PPP) & articulated (RRR) with respect
+                to different trajectory generation methods like Point-to-Point trajectory, continuous path like circle or sinusoidal wave trajectory.
+                Compared energy consumed by the manipulator for different trajectory interpolation methods.
+                  <br>
+              </p>
+              <p class="s-description text-center">
+                <i><b>Platform: </b>MATLAB</i>
+                </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-content">
+              <h2 class="s-title">3D Object Detection using KITTI Dataset </h2>
+              <p class="s-description text-center">
+                  <i>(February 2020 - May 2020)</i>
+                  <a href="/WDocs/3D_Object.pdf" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
+              </p>
+              <p class="s-description text-justify">
+                Performed 3D object detection on the KITTI dataset with the goal of reduced computation time and memory.
+                Experimented with using SqueezeDet in the Frustum PointNet architecture for 2D detection instead of a fine-tuned Fast R-CNN 
+                <br>
+              </p>
+              <p class="s-description text-center">
+                <i><b>Language:</b> Python | <b>Platform:</b> Google Cloud Platform</i>
+                </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-content">
+              <h2 class="s-title">Indoor 3D Mapping using RGB-D Camera</h2>
+              <p class="s-description text-center">
+                  <i>  (February 2020 - May 2020.)</i>
+                  <a href="https://www.youtube.com/watch?v=uIxt7ti0y7U&feature=youtu.be" target="_blank" class="button style2 down anchored">[ <i class="fa fa-video-camera" aria-hidden="true"></i> Video ]</a>
+                  </p>
+              <p class="s-description text-justify">
+                The goal of the project was to implement Real-Time Appearance-Based Mapping of the indoor environment using RGB-D Camera on turtlebot3.
+                Successfully generated robust 2D and 3D maps for an unknown environment using Li-DAR, IMU sensors and RGB-D camera on turtlebot3.
+                  <br>
+              </p>
+              <p class="s-description text-center">
+                <i><b>Language:</b> C++ | <b>Platform:</b> ROS,Gazebo</i>
+                </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-content">
+              <h2 class="s-title">Distracted Driver Detection</h2>
+              <p class="s-description text-center">
+                  <i>(September 2019 - December 2019)</i>
+                  <a href="/WDocs/CS539.pptx" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
+              </p>
+              <p class="s-description text-justify">
+                  Implementing an API that identifies the distracted driver and triggers the onboard alarm which helps to focus on driving. Designed and trained a different multi-class 
+                  classification algorithm like SVM, Decision Trees, Random Forests and CNN’s capable of detecting 10 different human
+                  distractions based on driver’s activity with an average accuracy of ~ 92%
+                  <br> 
+              </p>
+              <p class="s-description text-center">
+                <i><b>Language:</b> Python</i>
+                </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-content">
+              <h2 class="s-title">Detection and Recognition of Traffic Signals</h2>
+              <p class="s-description text-center">
+                  <i>(September 2019 - December 2019)</i>
+                  <a href="https://www.youtube.com/watch?v=PsYKZ-kU1rA" target="_blank" class="button style2 down anchored">[ <i class="fa fa-video-camera" aria-hidden="true"></i> Video ]</a>
+                  <a href="/WDocs/ppt.pptx" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
+              </p>
+              <p class="s-description text-justify">
+                  Extracted image feature’s using SHIFT, SURF, Hough Transform, and dynamic thresholding to detect traffic signal in a frame. 
+                  Integrated Deep Neural Network based object detection method YOLOv3 for robust detection and SVM for status recognition.
+                  <br>
+              </p>
+              <p class="s-description text-center">
+                <i><b>Language:</b> Python</i>
+                </p>
+            </div>
+          </div>
+        </div>
+
+
+
+        </div>
+        </div>
+
       <!-- DJSR Projects -->
       <div id="DJSRP" class="tabcontent">
         <div class="row">
+          
           <div class="col-md-4">
               <div class="service-box">
                 <div class="service-content">
                   <h2 class="s-title">djs-racing 04</h2>
                   <p class="s-description text-center">
                       <i>(March 2017 - May 2018)</i>
+                      <br><a href="https://www.youtube.com/watch?v=1DCMZfrBiH4" target="_blank" class="button style2 down anchored">[ <i class="fa fa-video-camera" aria-hidden="true"></i> Video ]</a>
+                      <a href="https://djs-racing.com/cars/#1538210459689-7fc4e06c-4ea9" target="_blank" class="button style2 down anchored">[ <i class="fa fa-flag-checkered" aria-hidden="true"></i> Specifications ]</a>
                   </p>
-                  <p class="s-description text-center">
+                  <p class="s-description text-justify">
                       Improvising on previous designs this season I designed a custom embedded board which serve as a Power
                       Distribution Module for the car, which also has a feature to control the “Paddle Controlled High-Tech
                        Servo Motor” which was used to actuate the clutch. Designed a Data Logger and Telemetry system using Race
                         Capture Pro MK3 which collects
                       data from various sensors on the car and use that data to improvise its performance of the car. 
-                       <br><a href="https://www.youtube.com/watch?v=1DCMZfrBiH4" target="_blank" class="button style2 down anchored">[ <i class="fa fa-video-camera" aria-hidden="true"></i> Video ]</a>
-                    <a href="https://djs-racing.com/cars/#1538210459689-7fc4e06c-4ea9" target="_blank" class="button style2 down anchored">[ <i class="fa fa-flag-checkered" aria-hidden="true"></i> Specifications ]</a>
+                      
                 </p>
                 </div>
               </div>
@@ -492,195 +616,127 @@
             <h2 class="s-title">djs-racing 03.v2</h2>
             <p class="s-description text-center">
                 <i>(March 2016 - Feb 2017)</i>
+                <br><a href="https://www.youtube.com/watch?v=bkzT7z1dCs0" target="_blank" class="button style2 down anchored">[ <i class="fa fa-video-camera" aria-hidden="true"></i> Video ]</a>
+                <a href="https://djs-racing.com/cars/#1506970470226-5cc910f0-e843" target="_blank" class="button style2 down anchored">[ <i class="fa fa-flag-checkered" aria-hidden="true"></i> Specifications ]</a>
+                <a href="/WDocs/Design Report ELECTRONICS .pdf" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>  
             </p>
-            <p class="s-description text-center">
+            <p class="s-description text-justify">
               Designed an industrial-grade Electrical Wiring Loom which was compatible
              with Custom programmable Performance Electronics PE3 ECU. Developed Electronic Solenoid
               Shifter system with ignition interrupts for fast gear shifting. Effectively developed a
                closed-loop Drag Reduction System for Aerodynamic package which gets the feedback from brake 
                pressure sensor and steering angle position 
-
-              <br><a href="https://www.youtube.com/watch?v=bkzT7z1dCs0" target="_blank" class="button style2 down anchored">[ <i class="fa fa-video-camera" aria-hidden="true"></i> Video ]</a>
-              <a href="https://djs-racing.com/cars/#1506970470226-5cc910f0-e843" target="_blank" class="button style2 down anchored">[ <i class="fa fa-flag-checkered" aria-hidden="true"></i> Specifications ]</a>
-              <a href="/WDocs/Design Report ELECTRONICS .pdf" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
-              
             </p>
           </div>
         </div>
       </div>
     </div>
-      </div>
+    </div>
 
-    <!-- All Projects -->
-      <div id="All" class="tabcontent">
-        <div class="row">
 
-            <div class="col-md-4">
-                <div class="service-box">
-                  <div class="service-content">
-                    <h2 class="s-title">Distracted Driver Detection </h2>
-                    <p class="s-description text-center">
-                        <i>(September 2019 - December 2019)</i>
-                    </p>
-                    <p class="s-description text-center">
-                        Implementing an API that identifies the distracted driver and triggers the onboard alarm which helps to focus on driving. Designed and trained a different multi-class 
-                        classification algorithm like SVM, Decision Trees, Random Forests and CNN’s capable of detecting 10 different human
-                        distractions based on driver’s activity with an average accuracy of ~ 92%
-                        <br>
-                        <a href="/WDocs/CS539.pptx" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                  <div class="service-box">
-                    <div class="service-content">
-                      <h2 class="s-title">Detection and Recognition of Traffic Signals</h2>
-                      <p class="s-description text-center">
-                          <i>(September 2019 - December 2019)</i>
-                      </p>
-                      <p class="s-description text-center">
-                          Extracted image feature’s using SHIFT, SURF, Hough Transform, and dynamic thresholding to detect traffic signal in a frame. 
-                          Integrated Deep Neural Network based object detection method YOLOv3 for robust detection and SVM for status recognition.
-                          <br>
-                          <a href="https://www.youtube.com/watch?v=PsYKZ-kU1rA" target="_blank" class="button style2 down anchored">[ <i class="fa fa-video-camera" aria-hidden="true"></i> Video ]</a>
-                          <a href="/WDocs/ppt.pptx" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-        <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-content">
-                <h2 class="s-title">Autonomous Robotic Arm</h2>
-                <p class="s-description text-center">
-                    <i>(June 2017 - March 2018)</i>
-                </p>
-                <p class="s-description text-center">
-                    Analyzed forward Kinematics of 3 DOF robotic arm and designed the CAD model on SolidWorks studied the strength of the structure using FEA.
-                    To make it autonomous, trained the arm to reach the desired location using principle of supervised learning algorithm using LabVIEW for computing.
-              <br><a href="https://www.youtube.com/watch?v=EVBGGDy6_04&feature=youtu.be" target="_blank" class="button style2 down anchored">[ <i class="fa fa-video-camera" aria-hidden="true"></i> Video ]</a>
-                <a href="/WDocs/Poster Final.pdf" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
-              </p>
-              </div>
-            </div>
-          </div> 
-
+      <!-- C++ ND Projects -->
+      <div id="CPPPRO" class="tabcontent">
+        <div class=" text-center">
+          <p class="successful">
+            <a itemprop="sameAs" href="/WDocs/CPPND_Certificate.pdf" target="_blank">
+              <b> (April 2020 - June 2020) </b>     
+            </a>
+          </p>
+        </div>
+       
+        <div class="row">  
           <div class="col-md-4">
               <div class="service-box">
                 <div class="service-content">
-                  <h2 class="s-title">djs-racing 04</h2>
+                  <h2 class="s-title">Snake Game Application</h2>
                   <p class="s-description text-center">
-                      <i>(March 2017 - May 2018)</i>
+                      <br><a href="https://github.com/vrushabhdesai/Capstone_Project_Snake_Game" target="_blank" class="button style2 down anchored">[ <i class="fa fa-github" aria-hidden="true"></i> Git Repo ]</a>
+                    
                   </p>
-                  <p class="s-description text-center">
-                    Improvising on previous designs this season I designed a custom embedded board which serve as a Power
-                    Distribution Module for the car, which also has a feature to control the “Paddle Controlled High-Tech
-                      Servo Motor” which was used to actuate the clutch. Designed a Data Logger and Telemetry system using Race
-                      Capture Pro MK3 which collects
-                    data from various sensors on the car and use that data to improvise its performance of the car.     
-                      <br><a href="https://www.youtube.com/watch?v=1DCMZfrBiH4" target="_blank" class="button style2 down anchored">[ <i class="fa fa-video-camera" aria-hidden="true"></i> Video ]</a>
-                    <a href="https://djs-racing.com/cars/#1538210459689-7fc4e06c-4ea9" target="_blank" class="button style2 down anchored">[ <i class="fa fa-flag-checkered" aria-hidden="true"></i> Specifications ]</a>
-                </p>
+                  <p class="s-description text-justify">
+                    Capstone Project which utilizes the core concepts from object-oriented programming, memory management, 
+                    and concurrency. Once the game starts it creates objects, then the game continues to loop through each component
+                    and simultaneously grabs input from the user. 
+                    There are three different levels in which the user can start with Easy, Medium, and Hard. 
+                  </p>
+                     
                 </div>
               </div>
             </div>      
+        
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-content">
+                  <h2 class="s-title">Concurrent Traffic Simulation</h2>
+                  <p class="s-description text-center">
+                      <br><a href="https://github.com/vrushabhdesai/Concurrent_Traffic_Simulation" target="_blank" class="button style2 down anchored">[ <i class="fa fa-github" aria-hidden="true"></i> Git Repo ]</a>
+                  </p>
+                  <p class="s-description text-justify">
+                    Built a multithreaded traffic simulator using a real urban map. Each vehicle runs
+                     on a separate thread and managed intersections using traffic lights to facilitate traffic flow and avoid collisions. Visualization can be seen on github repository.
+                  </p>
+                     
+                </div>
+              </div>  
+            </div>   
 
-      <div class="col-md-4">
-      <div class="service-box">
-        <div class="service-content">
-          <h2 class="s-title">djs-racing 03.v2</h2>
-          <p class="s-description text-center">
-              <i>(March 2016 - Feb 2017)</i>
-          </p>
-          <p class="s-description text-center">
-              Designed an industrial-grade Electrical Wiring Loom which was compatible
-              with Custom programmable Performance Electronics PE3 ECU. Developed Electronic Solenoid
-               Shifter system with ignition interrupts for fast gear shifting. Effectively developed a
-                closed-loop Drag Reduction System for Aerodynamic package which gets the feedback from brake 
-                pressure sensor and steering angle position
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-content">
+                  <h2 class="s-title">Memory Management Chatbot</h2>
+                  <p class="s-description text-center">
+                      
+                      <br><a href="https://github.com/vrushabhdesai/Memory_Management_Chatbot" target="_blank" class="button style2 down anchored">[ <i class="fa fa-github" aria-hidden="true"></i> Git Repo ]</a>
+                    
+                  </p>
+                  <p class="s-description text-justify">
+                    Implemented Chatbot using modern C++ memory management techniques such as smart pointers and move semantics. 
+                    The knowledge base was loaded from a text file, a knowledge graph representation was created in computer memory. 
+                    After a user query has been sent to the chatbot, the Levenshtein distance is used to identify the most probable answer.
+                  </p>
+                     
+                </div>
+              </div>
+            </div>   
 
-            <br><a href="https://www.youtube.com/watch?v=bkzT7z1dCs0" target="_blank" class="button style2 down anchored">[ <i class="fa fa-video-camera" aria-hidden="true"></i> Video ]</a>
-            <a href="https://djs-racing.com/cars/#1506970470226-5cc910f0-e843" target="_blank" class="button style2 down anchored">[ <i class="fa fa-flag-checkered" aria-hidden="true"></i> Specifications ]</a>
-            <a href="/WDocs/Design Report ELECTRONICS .pdf" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
+
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-content">
+                  <h2 class="s-title">Process Monitor</h2>
+                  <p class="s-description text-center">
+                      <br><a href="https://github.com/vrushabhdesai/Linux_System_Monitor" target="_blank" class="button style2 down anchored">[ <i class="fa fa-github" aria-hidden="true"></i> Git Repo ]</a>
+                    
+                  </p>
+                  <p class="s-description text-justify">
+                    The system monitor shows what’s the current process running on your computer. Processes id, CPU and memory usage, etc.
+                     Object-oriented C++  was the backbone to build a Linux system monitor similar to the widely used htop application. 
+                  </p>
+                     
+                </div>
+              </div>
+            </div>   
+        
             
-          </p>
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-content">
+                  <h2 class="s-title">Route Planner</h2>
+                  <p class="s-description text-center">
+                      <br><a href="https://github.com/vrushabhdesai/OpenStreetMap_Route_Planning" target="_blank" class="button style2 down anchored">[ <i class="fa fa-github" aria-hidden="true"></i> Git Repo ]</a>
+ 
+                  </p>
+                  <p class="s-description text-justify">
+                    Used OpenStreetMap data and the IO2D visualization library to build a route planner that finds a path between two points on a real-world map using the A-star algorithm.
+                  </p>
+                     
+                </div>
+              </div>
+            </div>   
+          
         </div>
-      </div>
     </div>
-
-    <div class="col-md-4">
-        <div class="service-box">
-          <div class="service-content">
-            <h2 class="s-title">Gesture Controled Wheelchair</h2>
-            <p class="s-description text-center">
-                <i>(July 2019 - June 2019)</i>
-            </p>
-            <p class="s-description text-center">
-                Interfaced Arduino Uno with GY61 accelerometer sensor which has ADXL-335 as a sensing element, that can measure acceleration 
-                up to a minimum of +/- 3 g and gives the voltage linearly proportional to the acceleration. 
-                According to sensor values, L298N motor driver is used to control all four DC Motors mounted on wheelchair.
-              <br> <a href="/WDocs/Wheelchair.pdf" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
-              </p>
-          </div>
-        </div>
-      </div>
-
-    <div class="col-md-4">
-        <div class="service-box">
-          <div class="service-content">
-            <h2 class="s-title">Gesture Controled Robotic Arm</h2>
-            <p class="s-description text-center">
-                <i>(January 2017 - April 2017)</i>
-            </p>
-            <p class="s-description text-center">
-                Designed minimum embedded system board using EDA tools like Eagle, which get the X, Y and Z-Axis angles from an inertia sensor (MPU 6050)
-                 located on the user’s hand. According to the sensor value a SCARA based pick and place robotic arm is driven.
-                 <br><a href="/WDocs/G.C.Robotic Arm Report.pdf" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-content">
-              <h2 class="s-title">Electromagnetic Pulse Generator</h2>
-              <p class="s-description text-center">
-                  <i>(August 2016 - October 2016)</i>
-              </p>
-              <p class="s-description text-center">
-                  Designed and carried out the circuit simulation of various passive components using LTspice. 
-                  I was capable to successfully generate 150V surge at primary coil using capacitors as an energy storage bank.
-                  <br><a href="/WDocs/EMP_Report.pdf" target="_blank" class="button style2 down anchored">[ <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Report ]</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-      <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-content">
-              <h2 class="s-title">Fire Alarm</h2>
-              <p class="s-description text-center">
-                  <i>(January 2014 - April 2014)</i>
-              </p>
-              <p class="s-description text-center">
-                  Germanium Diode was used as a heat-sensing element in the circuit. As the temperature near diode increases the diode reverse resistance drops 
-                  increasing voltage at the non-inverting terminal of the operational amplifier which in turn on the external speaker and detect fire.    
-                
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-
-      <div class="line-mf"></div>
-      <br>
-    </div>
+    
   </section>  
 
  <!-- Projects Completed  -->
@@ -694,7 +750,7 @@
             <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
           </div>
           <div class="counter-num">
-            <p class="counter">14</p>
+            <p class="counter">20</p>
             <span class="counter-text">PROJECTS COMPLETED</span>
           </div>
         </div>
@@ -705,7 +761,7 @@
             <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
           </div>
           <div class="counter-num">
-            <p class="counter">15</p>
+            <p class="counter">20</p>
             <span class="counter-text"> TOTAL MONTHS OF EXPERIENCE</span>
           </div>
         </div>
@@ -757,6 +813,9 @@
                   </p>
                   <ul>  
                   <p class="subtitle-a">
+                    <li> Deep Learning </li>
+                    <li> Advanced Robot Navigation </li>
+                    <li> Robot Dynamics </li>
                       <li>Foundations of Robotics</li>
                       <li>Machine Learning </li>
                       <li>Computer Vision</li>
@@ -776,9 +835,8 @@
                         I am currently taking the following courses at WPI during my graduate studies: 
                     <ul>  
                     <p class="subtitle-a">
-                      <li> Deep Learning </li>
-                      <li> Advanced Robot Navigation </li>
-                      <li> Robot Dynamics </li>
+                <li> Directed Research </li>
+                <li> Project Management</li>
                     </p>
                   </div>
                 </div>  
