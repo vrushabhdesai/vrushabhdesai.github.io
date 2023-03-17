@@ -8,7 +8,7 @@ Welcome to my personal website! This is where I showcase my portfolio, share my 
 
 ## Portfolio
 
-My portfolio includes information about me, work experince, projects and course work.
+My portfolio includes information about me, work experience, projects and course work.
 
 ## Contact Me
 
