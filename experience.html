@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience & Projects — Vrushabh Desai</title>
+  <meta name="description" content="Work experience and projects by Vrushabh Desai — Robotics, Machine Vision, Embedded Systems, and AI/ML.">
+  <link rel="icon" href="assets/img/icons 90.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">Vru<span>.</span>Desai</a>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="experience.html" class="active">Experience</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="docs/Resume_Vrushabh.pdf" target="_blank" class="nav-cta">
+        <i class="bi bi-download"></i> Resume
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="section" style="padding-top:120px">
+    <div class="container">
+
+      <!-- Work Experience -->
+      <div class="section-header" data-animate>
+        <span class="section-badge">Career</span>
+        <h2>Work Experience</h2>
+        <p>Professional journey across software engineering, embedded systems, and robotics.</p>
+        <div class="circuit-line"></div>
+      </div>
+
+      <div class="experience-cards" style="margin-bottom:60px">
+        <div class="exp-card featured" data-animate data-delay="100">
+          <div class="card-top">
+            <div class="company-icon"><i class="bi bi-eye"></i></div>
+            <span class="period-badge">Current</span>
+          </div>
+          <h3>Senior Software Engineer</h3>
+          <p class="company-name"><a href="https://www.cognex.com/" target="_blank">Cognex Corporation, USA</a></p>
+          <div class="description">
+            <ul>
+              <li>Began as Associate Software Engineer; promoted through R&D, design, and testing roles.</li>
+              <li>Currently developing 2D and 3D vision tools for Cognex industrial machine vision products.</li>
+            </ul>
+          </div>
+          <div class="skills-tags">
+            <span>C++</span>
+            <span>Computer Vision</span>
+            <span>3D Vision</span>
+            <span>Software Design</span>
+            <span>R&D</span>
+          </div>
+        </div>
+
+        <div class="exp-card" data-animate data-delay="200">
+          <div class="card-top">
+            <div class="company-icon"><i class="bi bi-ev-front"></i></div>
+            <span class="period-badge">2018 – 2019</span>
+          </div>
+          <h3>Signal Processing & Control Algorithm Engineer</h3>
+          <p class="company-name"><a href="https://www.grushie-energy.com/" target="_blank">Earth Energy EV, India</a></p>
+          <div class="description">
+            <ul>
+              <li>Designed ECU using ATmega 1284P with CAN bus; developed embedded firmware in C.</li>
+              <li>Designed 3KW battery pack with BMS for electric motorbike.</li>
+              <li>Led controls team for autonomous delivery bot (Raspberry Pi + OpenCV).</li>
+            </ul>
+          </div>
+          <div class="skills-tags">
+            <span>Embedded C</span>
+            <span>CAN Bus</span>
+            <span>OpenCV</span>
+            <span>BMS</span>
+          </div>
+        </div>
+
+        <div class="exp-card" data-animate data-delay="300">
+          <div class="card-top">
+            <div class="company-icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <span class="period-badge">2017</span>
+          </div>
+          <h3>Business Development Intern</h3>
+          <p class="company-name">KP Footwear, India</p>
+          <div class="description">
+            <ul>
+              <li>Analyzed sales/manufacturing data with ML-powered software; delivered strategy for 10% profit increase.</li>
+            </ul>
+          </div>
+          <div class="skills-tags">
+            <span>Machine Learning</span>
+            <span>Data Analysis</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <div class="section-header" data-animate>
+        <span class="section-badge">Portfolio</span>
+        <h2>Projects</h2>
+        <p>Technical projects spanning robotics, vision, embedded systems, and software engineering.</p>
+        <div class="circuit-line"></div>
+      </div>
+
+      <!-- Domain-based Filter Buttons -->
+      <div class="projects-filter" data-animate data-delay="100">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="robotics">Robotics</button>
+        <button class="filter-btn" data-filter="vision">Machine Vision / AI</button>
+        <button class="filter-btn" data-filter="embedded">Embedded</button>
+        <button class="filter-btn" data-filter="systems">Systems Programming</button>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="projects-grid">
+
+        <!-- === ROBOTICS === -->
+        <div class="project-card" data-category="robotics" data-animate data-delay="100">
+          <div class="project-thumb">
+            <span class="placeholder-icon"><i class="bi bi-image"></i></span>
+          </div>
+          <h4>TurtleBot Path Tracking (PID Controller)</h4>
+          <p class="project-date">May 2020 – Aug 2020</p>
+          <p class="project-desc">Point-to-point and multi-point PID controller for TurtleBot. Simulated on ROS Gazebo and deployed on real hardware.</p>
+          <div class="project-tech">
+            <span>C++</span><span>ROS</span><span>Gazebo</span>
+          </div>
+          <div class="project-links">
+            <a href="https://youtu.be/8Y3Wkv1REyE" target="_blank" class="link-badge video"><i class="bi bi-play-circle-fill"></i> Video</a>
+            <a href="docs/RC.pdf" target="_blank" class="link-badge report"><i class="bi bi-file-earmark-pdf-fill"></i> Report</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="robotics" data-animate data-delay="200">
+          <div class="project-thumb">
+            <span class="placeholder-icon"><i class="bi bi-image"></i></span>
+          </div>
+          <h4>Trajectory Generation for Serial Manipulators</h4>
+          <p class="project-date">Feb 2020 – May 2020</p>
+          <p class="project-desc">Analyzed 3-DoF Cartesian (PPP) and Articulated (RRR) manipulators. Compared energy across trajectory interpolation methods.</p>
+          <div class="project-tech">
+            <span>MATLAB</span>
+          </div>
+          <div class="project-links">
+            <a href="https://www.youtube.com/watch?v=XhCT4XaOYMo" target="_blank" class="link-badge video"><i class="bi bi-play-circle-fill"></i> Video</a>
+            <a href="docs/Trajectory_gen.pdf" target="_blank" class="link-badge report"><i class="bi bi-file-earmark-pdf-fill"></i> Report</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="robotics" data-animate data-delay="300">
+          <div class="project-thumb">
+            <span class="placeholder-icon"><i class="bi bi-image"></i></span>
+          </div>
+          <h4>Indoor 3D Mapping (RGB-D Camera)</h4>
+          <p class="project-date">Feb 2020 – May 2020</p>
+          <p class="project-desc">RTAB-Map implementation for indoor environments using RGB-D Camera, LiDAR, and IMU on TurtleBot3.</p>
+          <div class="project-tech">
+            <span>C++</span><span>ROS</span><span>SLAM</span>
+          </div>
+          <div class="project-links">
+            <a href="https://www.youtube.com/watch?v=uIxt7ti0y7U" target="_blank" class="link-badge video"><i class="bi bi-play-circle-fill"></i> Video</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="robotics" data-animate data-delay="100">
+          <div class="project-thumb">
+            <span class="placeholder-icon"><i class="bi bi-image"></i></span>
+          </div>
+          <h4>Autonomous Robotic Arm (3-DOF)</h4>
+          <p class="project-date">Jun 2017 – Mar 2018</p>
+          <p class="project-desc">Forward kinematics via DH parameters. CAD on SolidWorks, FEA analysis, PID control tuned with LabVIEW.</p>
+          <div class="project-tech">
+            <span>Embedded C</span><span>SolidWorks</span><span>LabVIEW</span>
+          </div>
+          <div class="project-links">
+            <a href="https://www.youtube.com/watch?v=EVBGGDy6_04" target="_blank" class="link-badge video"><i class="bi bi-play-circle-fill"></i> Video</a>
+            <a href="docs/Poster Final.pdf" target="_blank" class="link-badge report"><i class="bi bi-file-earmark-pdf-fill"></i> Report</a>
+          </div>
+        </div>
+
+        <!-- === MACHINE VISION / AI === -->
+        <div class="project-card" data-category="vision" data-animate data-delay="100">
+          <div class="project-thumb">
+            <span class="placeholder-icon"><i class="bi bi-image"></i></span>
+          </div>
+          <h4>3D Object Detection (KITTI Dataset)</h4>
+          <p class="project-date">Feb 2020 – May 2020</p>
+          <p class="project-desc">3D detection with reduced computation. Experimented with SqueezeDet in Frustum PointNet architecture.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Deep Learning</span><span>GCP</span>
+          </div>
+          <div class="project-links">
+            <a href="docs/3D_Object.pdf" target="_blank" class="link-badge report"><i class="bi bi-file-earmark-pdf-fill"></i> Report</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="vision" data-animate data-delay="200">
+          <div class="project-thumb">
+            <span class="placeholder-icon"><i class="bi bi-image"></i></span>
+          </div>
+          <h4>Distracted Driver Detection</h4>
+          <p class="project-date">Sep 2019 – Dec 2019</p>
+          <p class="project-desc">Deep learning model for classifying distracted driving behaviors from in-car images.</p>
+          <div class="project-tech">
+            <span>Python</span><span>CNN</span><span>Computer Vision</span>
+          </div>
+          <div class="project-links">
+            <a href="docs/CS539.pptx" target="_blank" class="link-badge report"><i class="bi bi-file-earmark-pdf-fill"></i> Slides</a>
+          </div>
+        </div>
+
+        <!-- === EMBEDDED === -->
+        <div class="project-card" data-category="embedded" data-animate data-delay="100">
+          <div class="project-thumb">
+            <span class="placeholder-icon"><i class="bi bi-image"></i></span>
+          </div>
+          <h4>DJS Racing 04 — Electronics & Telemetry</h4>
+          <p class="project-date">Mar 2017 – May 2018</p>
+          <p class="project-desc">Custom Power Distribution Module, paddle-controlled clutch servo, Data Logger & Telemetry via Race Capture Pro MK3.</p>
+          <div class="project-tech">
+            <span>Embedded</span><span>Telemetry</span><span>CAN</span>
+          </div>
+          <div class="project-links">
+            <a href="https://www.youtube.com/watch?v=1DCMZfrBiH4" target="_blank" class="link-badge video"><i class="bi bi-play-circle-fill"></i> Video</a>
+            <a href="https://djs-racing.com/cars/#1538210459689-7fc4e06c-4ea9" target="_blank" class="link-badge report"><i class="bi bi-link-45deg"></i> Specs</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="embedded" data-animate data-delay="200">
+          <div class="project-thumb">
+            <span class="placeholder-icon"><i class="bi bi-image"></i></span>
+          </div>
+          <h4>DJS Racing 03.v2 — Wiring & DRS</h4>
+          <p class="project-date">Mar 2016 – Feb 2017</p>
+          <p class="project-desc">Industrial-grade wiring loom for PE3 ECU. Electronic solenoid shifter. Closed-loop Drag Reduction System using brake pressure & steering angle.</p>
+          <div class="project-tech">
+            <span>Wiring Harness</span><span>ECU</span><span>DRS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://www.youtube.com/watch?v=bkzT7z1dCs0" target="_blank" class="link-badge video"><i class="bi bi-play-circle-fill"></i> Video</a>
+            <a href="docs/Design Report ELECTRONICS .pdf" target="_blank" class="link-badge report"><i class="bi bi-file-earmark-pdf-fill"></i> Report</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="embedded" data-animate data-delay="300">
+          <div class="project-thumb">
+            <span class="placeholder-icon"><i class="bi bi-image"></i></span>
+          </div>
+          <h4>Gesture Controlled Wheelchair</h4>
+          <p class="project-date">Jun – Jul 2019</p>
+          <p class="project-desc">Arduino + ADXL-335 accelerometer; L298N motor driver controls DC motors from hand gestures.</p>
+          <div class="project-tech">
+            <span>C</span><span>Arduino</span>
+          </div>
+          <div class="project-links">
+            <a href="docs/Wheelchair.pdf" target="_blank" class="link-badge report"><i class="bi bi-file-earmark-pdf-fill"></i> Report</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="embedded" data-animate data-delay="100">
+          <div class="project-thumb">
+            <span class="placeholder-icon"><i class="bi bi-image"></i></span>
+          </div>
+          <h4>Gesture Controlled Robotic Arm</h4>
+          <p class="project-date">Jan – Apr 2017</p>
+          <p class="project-desc">Custom PCB via Eagle EDA. MPU-6050 inertia sensor on hand drives SCARA pick-and-place arm.</p>
+          <div class="project-tech">
+            <span>Embedded C</span><span>Atmel Studios</span>
+          </div>
+          <div class="project-links">
+            <a href="docs/G.C.Robotic Arm Report.pdf" target="_blank" class="link-badge report"><i class="bi bi-file-earmark-pdf-fill"></i> Report</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="embedded" data-animate data-delay="200">
+          <div class="project-thumb">
+            <span class="placeholder-icon"><i class="bi bi-image"></i></span>
+          </div>
+          <h4>Electromagnetic Pulse Generator</h4>
+          <p class="project-date">Aug – Oct 2016</p>
+          <p class="project-desc">Circuit simulation of passive components in LTspice. Generated 150V surge at primary coil from capacitor bank.</p>
+          <div class="project-tech">
+            <span>LTspice</span>
+          </div>
+          <div class="project-links">
+            <a href="docs/EMP_Report.pdf" target="_blank" class="link-badge report"><i class="bi bi-file-earmark-pdf-fill"></i> Report</a>
+          </div>
+        </div>
+
+        <!-- === SYSTEMS PROGRAMMING === -->
+        <div class="project-card" data-category="systems" data-animate data-delay="100">
+          <div class="project-thumb">
+            <span class="placeholder-icon"><i class="bi bi-image"></i></span>
+          </div>
+          <h4>Snake Game (C++ Capstone)</h4>
+          <p class="project-date">2020</p>
+          <p class="project-desc">OOP, memory management, and concurrency. Multiple difficulty levels with concurrent input handling.</p>
+          <div class="project-tech">
+            <span>C++</span><span>OOP</span><span>Concurrency</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/vrushabhdesai/Capstone_Project_Snake_Game" target="_blank" class="link-badge github"><i class="bi bi-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="systems" data-animate data-delay="200">
+          <div class="project-thumb">
+            <span class="placeholder-icon"><i class="bi bi-image"></i></span>
+          </div>
+          <h4>Concurrent Traffic Simulation</h4>
+          <p class="project-date">2020</p>
+          <p class="project-desc">Multithreaded simulator on real urban map. Each vehicle on separate thread; traffic lights manage intersections.</p>
+          <div class="project-tech">
+            <span>C++</span><span>Multithreading</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/vrushabhdesai/Concurrent_Traffic_Simulation" target="_blank" class="link-badge github"><i class="bi bi-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="systems" data-animate data-delay="300">
+          <div class="project-thumb">
+            <span class="placeholder-icon"><i class="bi bi-image"></i></span>
+          </div>
+          <h4>Memory Management Chatbot</h4>
+          <p class="project-date">2020</p>
+          <p class="project-desc">Smart pointers and move semantics. Knowledge graph from text file; Levenshtein distance for matching.</p>
+          <div class="project-tech">
+            <span>C++</span><span>Smart Pointers</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/vrushabhdesai/Memory_Management_Chatbot" target="_blank" class="link-badge github"><i class="bi bi-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="systems" data-animate data-delay="100">
+          <div class="project-thumb">
+            <span class="placeholder-icon"><i class="bi bi-image"></i></span>
+          </div>
+          <h4>Linux Process Monitor</h4>
+          <p class="project-date">2020</p>
+          <p class="project-desc">htop-like system monitor showing PIDs, CPU/memory usage. Object-oriented C++ on Linux.</p>
+          <div class="project-tech">
+            <span>C++</span><span>Linux</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/vrushabhdesai/Linux_System_Monitor" target="_blank" class="link-badge github"><i class="bi bi-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="systems" data-animate data-delay="200">
+          <div class="project-thumb">
+            <span class="placeholder-icon"><i class="bi bi-image"></i></span>
+          </div>
+          <h4>Route Planner (A* Algorithm)</h4>
+          <p class="project-date">2020</p>
+          <p class="project-desc">OpenStreetMap data + IO2D visualization. A* search finds shortest path on real-world map.</p>
+          <div class="project-tech">
+            <span>C++</span><span>A*</span><span>OpenStreetMap</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/vrushabhdesai/OpenStreetMap_Route_Planning" target="_blank" class="link-badge github"><i class="bi bi-github"></i> Code</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/vrushabhdesai" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/vrushabhdesai" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="mailto:vrushabhdesai07@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+      </div>
+      <p>&copy; Vrushabh Desai. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
