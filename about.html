@@ -42,32 +42,53 @@
         <!-- Profile Card (sidebar) -->
         <aside>
           <div class="profile-card" data-animate="zoom-in">
-            <img src="assets/img/Vru.jpg" alt="Vrushabh Desai" class="avatar">
-            <h3>Vrushabh Desai</h3>
-            <p class="role">Senior Software Engineer @ Cognex</p>
+
+            <!-- Banner -->
+            <div class="profile-banner"></div>
+
+            <!-- Avatar (overlaps banner) -->
+            <div class="avatar-wrap">
+              <img src="assets/img/Vru.jpg" alt="Vrushabh Desai" class="avatar">
+            </div>
+
+            <!-- Identity -->
+            <div class="profile-identity">
+              <h3>Vrushabh Desai</h3>
+              <span class="availability-badge"><i class="bi bi-cpu"></i> Robotics · Vision · AI</span>
+              <p class="role"><i class="bi bi-briefcase"></i> Sr. Software Engineer · Cognex</p>
+              <p class="profile-detail"><i class="bi bi-geo-alt"></i> Massachusetts, USA</p>
+              <p class="profile-detail"><i class="bi bi-mortarboard"></i> M.S. Robotics · WPI</p>
+            </div>
+
+            <!-- Stats -->
             <div class="profile-stats">
+              <div class="stat-item">
+                <h4>6+</h4>
+                <p>Years</p>
+              </div>
               <div class="stat-item">
                 <h4>20+</h4>
                 <p>Projects</p>
-              </div>
-              <div class="stat-item">
-                <h4>4+</h4>
-                <p>Years</p>
               </div>
               <div class="stat-item">
                 <h4>6</h4>
                 <p>Awards</p>
               </div>
             </div>
+
+            <!-- Actions -->
             <div class="profile-actions">
               <a href="docs/Resume_Vrushabh.pdf" target="_blank" class="btn btn-primary"><i class="bi bi-download"></i> Download CV</a>
               <a href="contact.html" class="btn btn-outline"><i class="bi bi-envelope"></i> Contact</a>
             </div>
+
+            <!-- Social -->
             <div class="social-links">
               <a href="https://www.linkedin.com/in/vrushabhdesai" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
               <a href="https://github.com/vrushabhdesai" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
               <a href="mailto:vrushabhdesai07@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
             </div>
+
           </div>
         </aside>
 
@@ -76,41 +97,33 @@
           <!-- Bio — concise, focused -->
           <div class="content-block" data-animate="fade-left" data-delay="100">
             <div class="section-tag">// About</div>
-            <h2>Senior Software Engineer & Robotics Engineer</h2>
+            <h2>Senior Software Engineer (R&D)</h2>
             <p>Senior Software Engineer at <a href="https://www.cognex.com/" target="_blank"><strong>Cognex</strong></a>, developing 2D and 3D vision tools for industrial machine vision products. M.S. in Robotics Engineering from <a href="https://www.wpi.edu/academics/study/robotics-engineering-ms" target="_blank"><strong>Worcester Polytechnic Institute</strong></a> (4.0 GPA). Research interests span Computer Vision, Deep Learning, and Path Planning.</p>
-            <p>Previously led embedded systems and controls engineering at <a href="https://www.grushie-energy.com/" target="_blank"><strong>Earth Energy EV</strong></a>, and served as Electronics & Data Acquisition Lead for <a href="https://djs-racing.com/" target="_blank"><strong>Team DJS Racing</strong></a> competing in Formula Student internationally.</p>
+            <p>Previously led embedded systems and controls engineering at <a href="https://jindalmobilitric.in/" target="_blank"><strong>Jindal Mobilitric</strong></a>, and served as Electronics &amp; Data Acquisition Lead for <a href="https://djs-racing.com/" target="_blank"><strong>Team DJS Racing</strong></a> — helping the team achieve <strong>2nd Best Asian Team</strong> at Formula Student Germany 2017, <strong>Best Designed Car</strong> at Formula Bharat 2017 &amp; 2018, and <strong>Cost Event Award</strong> at Formula Student Austria 2018.</p>
           </div>
 
-          <!-- Key Details Grid -->
+          <!-- Key Details — Quick Info Bar -->
           <div class="content-block" data-animate="fade-left" data-delay="200">
-            <div class="details-grid">
-              <div class="detail-item">
-                <i class="bi bi-briefcase"></i>
-                <div class="detail-content">
-                  <span>Current Role</span>
-                  <strong>Sr. Software Engineer @ Cognex</strong>
-                </div>
+            <div class="quick-info-bar">
+              <div class="quick-info-item">
+                <i class="bi bi-briefcase qi-icon"></i>
+                <span class="qi-label">Current Role</span>
+                <span class="qi-value">Sr. Software Engineer<br><small style="font-weight:400;color:var(--text-muted)">@ Cognex</small></span>
               </div>
-              <div class="detail-item">
-                <i class="bi bi-mortarboard"></i>
-                <div class="detail-content">
-                  <span>Degree</span>
-                  <strong>M.S. Robotics Engineering, WPI</strong>
-                </div>
+              <div class="quick-info-item">
+                <i class="bi bi-mortarboard qi-icon"></i>
+                <span class="qi-label">Degree</span>
+                <span class="qi-value">M.S. Robotics Eng.<br><small style="font-weight:400;color:var(--text-muted)">WPI · 4.0 GPA</small></span>
               </div>
-              <div class="detail-item">
-                <i class="bi bi-geo-alt"></i>
-                <div class="detail-content">
-                  <span>Location</span>
-                  <strong>Massachusetts, USA</strong>
-                </div>
+              <div class="quick-info-item">
+                <i class="bi bi-geo-alt qi-icon"></i>
+                <span class="qi-label">Location</span>
+                <span class="qi-value">Massachusetts<br><small style="font-weight:400;color:var(--text-muted)">USA</small></span>
               </div>
-              <div class="detail-item">
-                <i class="bi bi-lightbulb"></i>
-                <div class="detail-content">
-                  <span>Focus Areas</span>
-                  <strong>Vision, Deep Learning, Embedded</strong>
-                </div>
+              <div class="quick-info-item">
+                <i class="bi bi-cpu qi-icon"></i>
+                <span class="qi-label">Focus Areas</span>
+                <span class="qi-value">Vision · Deep Learning<br><small style="font-weight:400;color:var(--text-muted)">Embedded · Robotics</small></span>
               </div>
             </div>
           </div>
@@ -215,15 +228,9 @@
               <div class="course-item"><i class="bi bi-check-circle"></i> AI</div>
               <div class="course-item"><i class="bi bi-check-circle"></i> Project Management</div>
             </div>
-            <h4 class="text-muted" style="margin-top:16px;margin-bottom:10px;font-weight:500">Certifications</h4>
-            <div class="coursework-grid">
-              <div class="course-item"><i class="bi bi-patch-check"></i> Robotics: Mobility (UPenn)</div>
-              <div class="course-item"><i class="bi bi-patch-check"></i> Modern Robotics (Northwestern)</div>
-              <div class="course-item"><i class="bi bi-patch-check"></i> MATLAB (Vanderbilt)</div>
-              <div class="course-item"><i class="bi bi-patch-check"></i> Machine Learning</div>
-              <div class="course-item"><i class="bi bi-patch-check"></i> CAN Bus Technology</div>
-              <div class="course-item"><i class="bi bi-patch-check"></i> Microcontrollers</div>
-            </div>
+            <h4 class="text-muted" style="margin-top:20px;margin-bottom:12px;font-weight:500">Certifications</h4>
+            <!-- Rendered from data.js PORTFOLIO.certifications -->
+            <div id="certifications-list" class="coursework-grid"></div>
           </div>
 
         </div>
@@ -244,6 +251,9 @@
     </div>
   </footer>
 
+  <a href="#" class="back-to-top btn btn-primary"><i class="bi bi-chevron-up"></i></a>
+
+  <script src="assets/js/data.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -34,7 +34,7 @@
   </header>
 
   <main class="section" style="padding-top:120px">
-    <div class="container">
+    <div class="container" style="max-width:800px">
 
       <!-- Section Header -->
       <div class="section-header" data-animate>
@@ -44,23 +44,15 @@
         <div class="circuit-line"></div>
       </div>
 
-      <!-- Contact Grid -->
-      <div class="contact-grid">
-
-        <!-- Contact Info -->
-        <div class="contact-info" data-animate data-delay="100">
+      <!-- // Connect with me -->
+      <div class="contact-section" data-animate data-delay="100">
+        <span class="section-tag">// Connect with me</span>
+        <div class="contact-items-row">
           <div class="contact-item">
             <div class="icon-wrapper"><i class="bi bi-envelope"></i></div>
             <div>
               <h4>Email</h4>
               <a href="mailto:vrushabhdesai07@gmail.com">vrushabhdesai07@gmail.com</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="icon-wrapper"><i class="bi bi-telephone"></i></div>
-            <div>
-              <h4>Phone</h4>
-              <a href="tel:+15082060188">+1 (508) 206-0188</a>
             </div>
           </div>
           <div class="contact-item">
@@ -70,41 +62,49 @@
               <p>Massachusetts, USA</p>
             </div>
           </div>
-        </div>
-
-        <!-- Resume & Social -->
-        <div data-animate data-delay="200">
-          <div class="content-block">
-            <div class="section-tag">// Resume</div>
-            <h2>Download My Resume</h2>
-            <p>Get a detailed overview of my experience, education, skills, and projects.</p>
-            <a href="docs/Resume_Vrushabh.pdf" target="_blank" class="btn btn-primary mt-4">
-              <i class="bi bi-file-earmark-pdf"></i> Download Resume (PDF)
-            </a>
-          </div>
-
-          <div class="content-block" style="margin-top:48px">
-            <div class="section-tag">// Social</div>
-            <h2>Connect With Me</h2>
-            <div class="contact-info" style="margin-top:16px">
-              <div class="contact-item">
-                <div class="icon-wrapper"><i class="bi bi-linkedin"></i></div>
-                <div>
-                  <h4>LinkedIn</h4>
-                  <a href="https://www.linkedin.com/in/vrushabhdesai" target="_blank">linkedin.com/in/vrushabhdesai</a>
-                </div>
-              </div>
-              <div class="contact-item">
-                <div class="icon-wrapper"><i class="bi bi-github"></i></div>
-                <div>
-                  <h4>GitHub</h4>
-                  <a href="https://github.com/vrushabhdesai" target="_blank">github.com/vrushabhdesai</a>
-                </div>
-              </div>
+          <div class="contact-item">
+            <div class="icon-wrapper"><i class="bi bi-telephone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+15082060188">+1 (508) 206-0188</a>
             </div>
           </div>
         </div>
+      </div>
 
+      <!-- // Resume -->
+      <div class="contact-section" data-animate data-delay="200">
+        <span class="section-tag">// Resume</span>
+        <div class="resume-cta-card">
+          <div>
+            <h3>Download My Resume</h3>
+            <p>Full overview of experience, education, skills, and projects.</p>
+          </div>
+          <a href="docs/Resume_Vrushabh.pdf" target="_blank" class="btn btn-primary">
+            <i class="bi bi-file-earmark-pdf"></i> Download PDF
+          </a>
+        </div>
+      </div>
+
+      <!-- // Social -->
+      <div class="contact-section" data-animate data-delay="300">
+        <span class="section-tag">// Social</span>
+        <div class="social-cards-row">
+          <a href="https://www.linkedin.com/in/vrushabhdesai" target="_blank" class="social-card-item">
+            <div class="social-icon"><i class="bi bi-linkedin"></i></div>
+            <div class="social-info">
+              <h4>LinkedIn</h4>
+              <p>linkedin.com/in/vrushabhdesai</p>
+            </div>
+          </a>
+          <a href="https://github.com/vrushabhdesai" target="_blank" class="social-card-item">
+            <div class="social-icon"><i class="bi bi-github"></i></div>
+            <div class="social-info">
+              <h4>GitHub</h4>
+              <p>github.com/vrushabhdesai</p>
+            </div>
+          </a>
+        </div>
       </div>
 
     </div>
@@ -122,6 +122,9 @@
     </div>
   </footer>
 
+  <a href="#" class="back-to-top btn btn-primary"><i class="bi bi-chevron-up"></i></a>
+
+  <script src="assets/js/data.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
