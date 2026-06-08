@@ -1016,6 +1016,25 @@ ul { list-style: none; }
   color: var(--accent);
 }
 
+.exp-bullet-group {
+  margin-bottom: 14px;
+}
+
+.exp-bullet-group:last-child {
+  margin-bottom: 0;
+}
+
+.exp-bullet-category {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: none;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
 .exp-card .skills-tags {
   display: flex;
   flex-wrap: wrap;
@@ -1116,7 +1135,8 @@ ul { list-style: none; }
 }
 
 .project-card h4 {
-  font-size: 1rem;
+  font-size: 0.92rem;
+  font-weight: 600;
   margin-bottom: 4px;
 }
 
@@ -1129,10 +1149,33 @@ ul { list-style: none; }
 
 .project-card .project-desc {
   color: var(--text-muted);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   flex: 1;
   margin-bottom: 12px;
+}
+
+.project-card .project-desc-bullets {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  flex: 1;
+  margin-bottom: 12px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.project-card .project-desc-bullets li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 6px;
+}
+
+.project-card .project-desc-bullets li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
 }
 
 .project-card .project-tech {

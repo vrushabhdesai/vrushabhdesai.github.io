@@ -197,7 +197,17 @@
         ? `<a href="${job.companyUrl}" target="_blank">${job.company}, ${job.location}</a>`
         : `${job.company}, ${job.location}`;
 
-      const bulletsHtml = job.bullets.map(b => `<li>${b}</li>`).join('');
+      // Support both flat arrays of strings and categorized bullet objects
+      let bulletsHtml;
+      if (job.bullets.length && typeof job.bullets[0] === 'object' && job.bullets[0].category) {
+        bulletsHtml = job.bullets.map(group => `
+          <div class="exp-bullet-group">
+            <h5 class="exp-bullet-category">${group.category}</h5>
+            <ul>${group.items.map(b => `<li>${b}</li>`).join('')}</ul>
+          </div>`).join('');
+      } else {
+        bulletsHtml = `<ul>${job.bullets.map(b => `<li>${b}</li>`).join('')}</ul>`;
+      }
 
       const linksHtml = renderExpLinks(job.links);
 
@@ -216,7 +226,7 @@
             </div>
             <h3>${job.title}</h3>
             <p class="company-name">${companyHtml}</p>
-            <div class="description"><ul>${bulletsHtml}</ul></div>
+            <div class="description">${bulletsHtml}</div>
             ${linksHtml}
             <div class="skills-tags">${skillsHtml}</div>
           </div>
@@ -247,15 +257,21 @@
       const hidden   = defaultFilter !== 'all' && proj.category !== defaultFilter;
       const delay    = ((i % 3) + 1) * 100;
 
+      // Split description into bullet points (split on '. ' for sentences)
+      const descSentences = proj.desc.split(/\.\s+/).filter(s => s.trim().length > 0);
+      const descHtml = descSentences.length > 1
+        ? `<ul class="project-desc-bullets">${descSentences.map(s => `<li>${s.endsWith('.') ? s : s + '.'}</li>`).join('')}</ul>`
+        : `<p class="project-desc">${proj.desc}</p>`;
+
       return `
         <div class="project-card" data-category="${proj.category}"
              data-animate data-delay="${delay}"${hidden ? ' style="display:none"' : ''}>
-          <div class="project-thumb">
+          <!-- <div class="project-thumb">
             <span class="placeholder-icon"><i class="bi bi-image"></i></span>
-          </div>
+          </div> -->
           <h4>${proj.title}</h4>
           <span class="project-date-badge">${proj.date}</span>
-          <p class="project-desc">${proj.desc}</p>
+          ${descHtml}
           <div class="project-bottom">
             <div class="project-tech">${techHtml}</div>
             ${linksHtml ? `<div class="project-links">${linksHtml}</div>` : ''}
