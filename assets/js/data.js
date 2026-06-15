@@ -14,7 +14,6 @@ const PORTFOLIO = {
     title:    'Senior Software Engineer',
     subtitle: 'Robotics and Autonomous System Enthusiast',
     email:    'vrushabhdesai07@gmail.com',
-    phone:    '+1 (508) 206-0188',
     location: 'Massachusetts, USA',
     linkedin: 'https://www.linkedin.com/in/vrushabhdesai',
     github:   'https://github.com/vrushabhdesai',
