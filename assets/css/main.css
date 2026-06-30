@@ -1135,9 +1135,10 @@ ul { list-style: none; }
 }
 
 .project-card h4 {
-  font-size: 0.92rem;
-  font-weight: 600;
-  margin-bottom: 4px;
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 6px;
 }
 
 .project-card .project-date {

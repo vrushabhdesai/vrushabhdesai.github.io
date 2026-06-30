@@ -31,24 +31,24 @@ const PORTFOLIO = {
   /* ---- Work Experience ---- */
   /*
    * Fields:
-   *   id          – unique key
-   *   title       – job title
-   *   company     – company name
-   *   companyUrl  – URL (null if none)
-   *   location    – "City, Country"
-   *   periodBadge – text for the badge pill (e.g. "Current" or "2018 – 2019")
-   *   type        – role type label (Full-time / Internship / Formula Student)
-   *   icon        – Bootstrap Icon class (without "bi-")
-   *   featured    – true → highlighted border
-   *   bullets     – array of strings (HTML allowed)
-   *   skills      – array of skill strings
-   *   links       – array of { type, label, url }
+   *   id          - unique key
+   *   title       - job title
+   *   company     - company name
+   *   companyUrl  - URL (null if none)
+   *   location    - "City, Country"
+   *   periodBadge - text for the badge pill (e.g. "Current" or "2018 - 2019")
+   *   type        - role type label (Full-time / Internship / Formula Student)
+   *   icon        - Bootstrap Icon class (without "bi-")
+   *   featured    - true → highlighted border
+   *   bullets     - array of strings (HTML allowed)
+   *   skills      - array of skill strings
+   *   links       - array of { type, label, url }
    *                 type: "video" | "report" | "github" | "link"
    */
   experience: [
     {
       id: 'cognex',
-      title: 'Senior Software Engineer – R&D',
+      title: 'Senior Software Engineer - R&D',
       company: 'Cognex Corporation',
       companyUrl: 'https://www.cognex.com/',
       location: 'Natick, MA',
@@ -57,43 +57,60 @@ const PORTFOLIO = {
       icon: 'eye',
       featured: true,
       bullets: [
-        { category: 'Diagnostics & Tooling', items: [
-          'Built a <strong>C/C++ remote diagnostics platform</strong> for embedded vision systems, enabling engineers to debug Linux-based cameras from Windows and view live graphics and algorithm state, reducing hardware issue resolution time from <strong>4 hours to 15-30 minutes</strong>.',
-          'Built a <strong>C++ diagnostic replay framework</strong> that captured runtime system state from production devices and reproduced customer failures in desktop tools, cutting investigation time from <strong>1 day to 1 hour</strong>.',
+        { category: 'Industrial Vision Software', items: [
+          'Build core software for <strong>industrial machine vision products</strong>, including 2D/3D vision tools, AI-enabled vision workflows, cross-platform SDKs, and embedded camera diagnostics.',
+          'Contribute to the architecture and delivery of the <strong>Cognex Development Kit (CDK)</strong>, a C++ SDK with Python and C# bindings that gives teams one interface for 2D, 3D, and AI vision tools across Windows, Linux, ARM, and x64 platforms.',
         ]},
-        { category: 'SDK & Platform Development', items: [
-          'Designed and shipped the <strong>Cognex Development Kit (CDK)</strong>, a cross-platform software development kit with C++, Python, and C# interfaces that unified internal 2D, 3D, and AI-based vision tools into a single developer platform, reducing on-device tool deployment time by <strong>60%</strong> and enabling teams to launch new tools faster.',
-          'Eliminated a <strong>performance bottleneck</strong> in a 3D vision point-cloud pipeline by replacing deep-copy ownership with pointer-based semantics, improving benchmark performance by <strong>2x</strong>.',
-          'Expanded <strong>CDK adoption across embedded products</strong> by resolving deployment and production integration blockers with customers and downstream engineering teams, smoothing cross-product rollout.',
+        { category: 'Diagnostics & Record/Replay Debugging', items: [
+          'Developed <strong>remote diagnostics tools</strong> for embedded camera systems, allowing engineers to inspect live graphics, algorithm state, and device behavior while debugging Linux-based cameras from Windows desktop tools.',
+          'Built a <strong>C++ record/replay debugging framework</strong> that captures runtime state from production devices and reproduces customer field issues in desktop tools, shortening the path from field issue to local investigation.',
         ]},
-        { category: 'CI/CD & Release Engineering', items: [
-          'Owned <strong>CDK continuous integration and delivery (CI/CD) architecture</strong> in TeamCity, introducing infrastructure-as-code pipelines and on-demand build agents that reduced build times by <strong>4x</strong> across ARM and x64 platforms.',
-          'Built <strong>AI-assisted release and dependency-management workflows</strong> that automated build validation, release-note generation, and pull-request creation, cutting release effort by <strong>60%</strong>.',
-          'Coordinated <strong>cross-functional CDK releases</strong> across Windows installers, Debian packages, Python wheels, and NuGet packages, improving release readiness and execution across multiple distribution channels.',
+        { category: 'Delivery, Automation & Performance', items: [
+          'Improved release reliability with <strong>CI/CD, build automation, and AI-driven release workflows</strong>, including TeamCity infrastructure-as-code pipelines, on-demand build agents, automated validation, release-note generation, and pull-request creation.',
+          'Led <strong>cross-platform CDK release coordination</strong> across Windows installers, Debian packages, Python wheels, and NuGet packages.',
+          'Removed a <strong>performance bottleneck</strong> in a 3D vision point-cloud pipeline by replacing deep-copy ownership with pointer-based semantics, improving benchmark performance by <strong>2x</strong>.',
         ]},
         { category: 'Technical Leadership', items: [
-          'Led modernization planning for <strong>Cognex Vision Library (CVL)</strong> product by defining MVP scope, aligning stakeholders, and prioritizing engineering investments to accelerate delivery and lower program risk.',
+          'Led modernization planning for the <strong>Cognex Vision Library (CVL)</strong> product by defining MVP scope, aligning stakeholders, and prioritizing engineering investments to accelerate delivery and reduce program risk.',
         ]},
       ],
-      skills: ['C++', 'C', 'Python', 'C#', 'CMake', 'TeamCity', 'Docker', 'CI/CD', 'Computer Vision', '3D Vision'],
+      skills: ['C++', 'Python', 'C#', 'CMake', 'TeamCity', 'CI/CD', 'Computer Vision', '3D Vision', 'Embedded Diagnostics', 'Record/Replay Debugging', 'Windows/Linux', 'ARM/x64'],
+      links: [],
+    },
+    {
+      id: 'wpi-ga',
+      title: 'Graduate Assistant',
+      company: 'Worcester Polytechnic Institute',
+      companyUrl: 'https://www.wpi.edu/',
+      location: 'Worcester, MA',
+      periodBadge: 'Sep 2019 - Jun 2021',
+      type: 'Part-time',
+      icon: 'mortarboard',
+      featured: false,
+      bullets: [
+        'Supported <strong>ECE2049 - Embedded Computing in Engineering Design</strong> and <strong>ECE3204 - Micro-Electronics Circuits</strong> through lab sessions, office hours, and debugging support.',
+        'Helped students debug embedded systems, microcontroller labs, firmware assignments, and circuit-analysis problems.',
+        'Evaluated labs, assignments, and exams with detailed feedback on circuit analysis, embedded programming, and debugging approach.',
+      ],
+      skills: ['Embedded Systems', 'Microcontrollers', 'Circuit Analysis', 'Microelectronics', 'Lab Instruction', 'Technical Feedback'],
       links: [],
     },
     {
       id: 'jindal',
-      title: 'Embedded Systems Engineer',
-      company: 'Jindal Mobilitrics',
+      title: 'Software Engineer - Embedded Systems',
+      company: 'Jindal Mobilitric',
       companyUrl: 'https://jindalmobilitric.in/',
       location: 'Mumbai, India',
-      periodBadge: 'Jun 2018 – Jun 2019',
+      periodBadge: 'Jun 2018 - Jun 2019',
       type: 'Full-time',
       icon: 'ev-front',
       featured: false,
       bullets: [
-        'Led controls development for an <strong>autonomous delivery robot</strong>, building Raspberry Pi-based perception and control software with OpenCV and YOLOv3 and running system-level testing to validate lane-following and obstacle-avoidance behavior on embedded hardware.',
-        'Architected a custom microcontroller-based <strong>Vehicle Control Unit (VCU)</strong> for an electric motorbike, developed embedded C firmware and CAN bus communication software to integrate sensor inputs into a real-time vehicle control system.',
-        'Designed a <strong>3 kW battery pack, Battery Management System (BMS), and low-voltage electrical harness</strong> for an electric motorbike, contributing end-to-end power-system architecture and vehicle-electronics integration alongside embedded control development.',
+        'Built perception and control software for an <strong>autonomous delivery robot</strong> using Raspberry Pi, OpenCV, and YOLOv3 for lane following and obstacle avoidance.',
+        'Developed embedded C firmware and <strong>CAN bus communication</strong> for a custom Vehicle Control Unit (VCU), integrating sensor inputs into a real-time electric vehicle control system.',
+        'Designed electric motorbike electronics, including a <strong>3 kW battery pack, Battery Management System (BMS), and low-voltage electrical harness</strong>, connecting the power system, sensor inputs, and vehicle controls.',
       ],
-      skills: ['Embedded C', 'CAN Bus', 'OpenCV', 'YOLOv3', 'Raspberry Pi', 'BMS'],
+      skills: ['Embedded C', 'CAN Bus', 'OpenCV', 'YOLOv3', 'Raspberry Pi', 'VCU', 'BMS', 'EV Electronics'],
       links: [],
     },
     {
@@ -102,16 +119,17 @@ const PORTFOLIO = {
       company: 'DJS Racing Formula Student Team',
       companyUrl: 'https://djs-racing.com/',
       location: 'Mumbai, India',
-      periodBadge: 'Jun 2016 – May 2018',
+      periodBadge: 'Jun 2016 - May 2018',
       type: 'Formula Student',
       icon: 'car-front',
       featured: false,
       bullets: [
-        'Architected the race car\'s <strong>vehicle electronics and telemetry stack</strong>, integrating the engine control unit (ECU), power distribution, and real-time data acquisition systems, and developed a closed-loop drag reduction system (DRS) controller for track-based aerodynamic control.',
-        'Built <strong>real-time embedded control systems</strong> for a Formula Student race car, including paddle-actuated electronic shifting and drivetrain control, improving response time and reliability under high-speed racing conditions.',
-        'Delivered vehicle systems for an <strong>award-winning Formula Student race car</strong> that won Best Designed Car at Formula Bharat in 2017 and 2018, ranked as the second-best Asian team at Formula Student Germany 2017, and won the Cost event at Formula Student Austria 2018.',
+        'Led embedded vehicle systems and telemetry for a Formula Student race car, integrating ECU control, sensor interfaces, power distribution, and real-time data acquisition.',
+        'Developed <strong>real-time control systems</strong> for paddle shifting, drivetrain control, and DRS actuation, with reliability requirements driven by racing conditions.',
+        'Designed and integrated wiring harnesses, sensor networks, and track-side data systems for debugging, validation, and race-day analysis.',
+        'Contributed vehicle systems to an <strong>award-winning Formula Student race car</strong> that won Best Designed Car at Formula Bharat in 2017 and 2018, ranked as the second-best Asian team at Formula Student Germany 2017, and won the Cost event at Formula Student Austria 2018.',
       ],
-      skills: ['Embedded C', 'Wiring Harness', 'ECU', 'CAN Bus', 'Telemetry', 'DRS', 'PCB Design'],
+      skills: ['Embedded C', 'Wiring Harness', 'ECU', 'CAN Bus', 'Telemetry', 'DRS', 'PCB Design', 'Power Distribution', 'Sensor Networks'],
       links: [
         { type: 'video',  label: 'DJS 04 Video',        url: 'https://www.youtube.com/watch?v=1DCMZfrBiH4',          group: 'DJS 04' },
         { type: 'link',   label: 'DJS 04 Specs',        url: 'https://djs-racing.com/cars/#1538210459689-7fc4e06c-4ea9', group: 'DJS 04' },
@@ -131,9 +149,9 @@ const PORTFOLIO = {
       icon: 'graph-up-arrow',
       featured: false,
       bullets: [
-        'Conducted data-driven analysis of sales trends, inventory turnover, and manufacturing throughput using ML-powered business intelligence software to identify revenue growth opportunities.',
-        'Synthesized findings into an actionable market expansion strategy presented to leadership, contributing to a <strong>10% increase in profit</strong> within one quarter.',
-        'Collaborated with cross-functional teams to define KPIs and build reporting dashboards that informed pricing and production planning decisions.',
+        'Analyzed sales trends, inventory turnover, and manufacturing throughput using ML-powered business intelligence software.',
+        'Presented a market expansion strategy to leadership, contributing to a <strong>10% increase in profit</strong> within one quarter.',
+        'Worked with cross-functional teams to define KPIs and build reporting dashboards for pricing and production planning.',
       ],
       skills: ['Machine Learning', 'Data Analysis', 'Business Intelligence'],
       links: [],
@@ -143,12 +161,12 @@ const PORTFOLIO = {
   /* ---- Projects ---- */
   /*
    * Fields:
-   *   title    – project name
-   *   category – "robotics" | "computer-vision" | "embedded" | "systems"
-   *   date     – date string shown on the card
-   *   desc     – one–two sentence description
-   *   tech     – array of tech/skill strings
-   *   links    – array of { type, label, url }
+   *   title    - project name
+   *   category - "robotics" | "computer-vision" | "embedded" | "systems"
+   *   date     - date string shown on the card
+   *   desc     - one-two sentence description
+   *   tech     - array of tech/skill strings
+   *   links    - array of { type, label, url }
    *              type: "video" | "report" | "github" | "link"
    *
    * NOTE: DJS Racing projects are in the experience section above.
@@ -159,7 +177,7 @@ const PORTFOLIO = {
     {
       title: 'TurtleBot Path Tracking (PID Controller)',
       category: 'robotics',
-      date: 'May – Aug 2020',
+      date: 'May - Aug 2020',
       desc: 'Designed closed-loop PID path-tracking controllers for a TurtleBot differential-drive mobile robot. Modelled non-holonomic kinematic constraints in Cartesian coordinates, derived position control laws, and validated point-to-point and multi-waypoint navigation in Gazebo simulation. Tuned gains to demonstrate stable trajectory following with minimal overshoot.',
       tech: ['C++', 'ROS', 'Gazebo', 'PID Control', 'Differential Drive', 'Kinematics'],
       links: [
@@ -170,7 +188,7 @@ const PORTFOLIO = {
     {
       title: 'Trajectory Generation for Serial Manipulators',
       category: 'robotics',
-      date: 'Feb – May 2020',
+      date: 'Feb - May 2020',
       desc: 'Analysed trajectory generation for 3-DoF Cartesian (PPP) and Articulated (RRR) serial manipulators. Derived DH parameters, forward/inverse kinematics, and Jacobians for both configurations. Compared Polynomial and LSPB interpolation in joint and task space, evaluating position, velocity, and acceleration profiles for smooth, energy-efficient motion.',
       tech: ['MATLAB', 'DH Parameters', 'Forward/Inverse Kinematics', 'Jacobian', 'LSPB', 'Trajectory Planning'],
       links: [
@@ -181,7 +199,7 @@ const PORTFOLIO = {
     {
       title: 'Indoor 3D Mapping (RGB-D SLAM)',
       category: 'robotics',
-      date: 'Feb – May 2020',
+      date: 'Feb - May 2020',
       desc: 'Implemented RTAB-Map SLAM for indoor 3D mapping using RGB-D camera, LiDAR, and IMU sensor fusion on a TurtleBot3 platform. Achieved real-time loop closure and map optimization.',
       tech: ['C++', 'ROS', 'RTAB-Map', 'SLAM', 'LiDAR'],
       links: [
@@ -191,7 +209,7 @@ const PORTFOLIO = {
     {
       title: 'Autonomous Robotic Arm (3-DOF)',
       category: 'robotics',
-      date: 'Jun 2017 – Mar 2018',
+      date: 'Jun 2017 - Mar 2018',
       desc: 'Designed a 3-DOF robotic arm from scratch: forward kinematics via DH parameters, SolidWorks CAD with FEA structural analysis, and PID control implementation tuned with LabVIEW NI DAQ.',
       tech: ['Embedded C', 'SolidWorks', 'LabVIEW', 'FEA', 'PID'],
       links: [
@@ -204,7 +222,7 @@ const PORTFOLIO = {
     {
       title: '3D Object Detection (KITTI Dataset)',
       category: 'computer-vision',
-      date: 'Feb – May 2020',
+      date: 'Feb - May 2020',
       desc: 'Built an efficient 3D object detection pipeline for autonomous driving by integrating embedded-friendly SqueezeDet 2D proposals into the Frustum PointNet architecture, replacing the heavier Fast-RCNN baseline. Investigated Smooth L1 vs MSE regression losses for 3D bounding box estimation on the KITTI benchmark (Cars, Pedestrians, Cyclists). Trained with Adam optimizer on GCP with a batch size of 32.',
       tech: ['Python', 'TensorFlow', 'Frustum PointNet', 'SqueezeDet', 'Point Clouds', 'KITTI Dataset', 'Deep Learning', 'GCP'],
       links: [
@@ -214,7 +232,7 @@ const PORTFOLIO = {
     {
       title: 'Distracted Driver Detection',
       category: 'computer-vision',
-      date: 'Sep – Dec 2019',
+      date: 'Sep - Dec 2019',
       desc: 'Built a CNN-based classifier to detect 10 categories of distracted driving behaviour from dashboard camera images. Benchmarked transfer learning with VGG16 and ResNet architectures, achieving high multi-class accuracy through targeted fine-tuning on the Kaggle State Farm dataset.',
       tech: ['Python', 'Keras', 'CNN', 'Transfer Learning', 'VGG16', 'ResNet', 'Computer Vision'],
       links: [
@@ -226,7 +244,7 @@ const PORTFOLIO = {
     {
       title: 'Gesture Controlled Wheelchair',
       category: 'embedded',
-      date: 'Jun – Jul 2019',
+      date: 'Jun - Jul 2019',
       desc: 'Developed a low-cost gesture-controlled smart wheelchair for mobility-impaired users. Tilt angles from an ADXL-335 3-axis accelerometer map to directional motion commands, driving dual DC motors via an L293D H-bridge motor driver. Custom Arduino firmware translates gesture thresholds into motor speed and direction, providing independent mobility without joystick or voice input.',
       tech: ['C', 'Arduino Uno', 'ADXL-335', 'L293D Motor Driver', 'Gesture Control', 'Embedded Systems'],
       links: [
@@ -236,7 +254,7 @@ const PORTFOLIO = {
     {
       title: 'Gesture Controlled Robotic Arm',
       category: 'embedded',
-      date: 'Jan – Apr 2017',
+      date: 'Jan - Apr 2017',
       desc: 'Designed a minimum embedded system and manufactured a custom PCB (schematic + layout in Proteus) for a gesture-controlled pick-and-place arm. An MPU-6050 IMU (3-axis accelerometer + gyroscope) worn on the hand streams raw orientation data over I²C to an ATmega-32A, which decodes gestures and drives servo motors via an L293D motor driver in real time.',
       tech: ['Embedded C', 'ATmega-32A', 'MPU-6050', 'I2C', 'Proteus PCB Design', 'L293D', 'Atmel Studio'],
       links: [
@@ -246,7 +264,7 @@ const PORTFOLIO = {
     {
       title: 'Electromagnetic Pulse Generator',
       category: 'embedded',
-      date: 'Aug – Oct 2016',
+      date: 'Aug - Oct 2016',
       desc: 'Designed and characterised an EMP generator using a monostable multivibrator → BJT driver → Power MOSFET → capacitor bank discharge topology. Simulated passive component interactions in LTspice to model discharge timing and coil current pulse shape. Successfully produced a 150 V transient surge at the primary coil output during bench testing.',
       tech: ['LTspice', 'Circuit Design', 'MOSFET', 'BJT', 'Capacitor Bank', 'Power Electronics', 'Circuit Simulation'],
       links: [
@@ -325,7 +343,7 @@ const PORTFOLIO = {
       icon: 'patch-check-fill',
     },
     {
-      name: 'Modern Robotics (Course I–IV)',
+      name: 'Modern Robotics (Course I-IV)',
       issuer: 'Northwestern / Coursera',
       url: 'https://www.coursera.org/specializations/modernrobotics',
       icon: 'patch-check-fill',
@@ -337,7 +355,7 @@ const PORTFOLIO = {
       icon: 'patch-check-fill',
     },
     {
-      name: 'Machine Learning A–Z',
+      name: 'Machine Learning A-Z',
       issuer: 'Udemy',
       url: 'https://www.udemy.com/course/machinelearning/',
       icon: 'patch-check-fill',
